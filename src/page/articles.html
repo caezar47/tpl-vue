@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru-RU"> 
+	<head>
+		[[azbntple 
+			tpl="/src/block/common/head/.html" 
+			title=" "
+			description=" "
+		]] 		
+	</head>
+	<body> 
+		[[azbntple 
+			tpl="/src/block/common/navbar/navbar.html"
+			navbar_prefix="navbar__"
+			navbar_mod="is--scroll"
+		]] 
+		[[azbntple  
+			tpl="/src/block/page/articles.html"
+			content_prefix="content-block__"       
+			content_mod="  "
+			block_heading_mod="is--h1  is--ff2  is--center-screen"
+			block_heading_level="h1"
+			block_heading="Полезные материалы"
+			block_bread_mod="is--center"  
+		]]	
+		[[azbntple 
+			tpl="/src/block/common/form/block-call.html" 
+			block_prefix="form-panel__"
+			block_mod="is--bg  is--call"
+			block_bg="{{url-path-img}}/temp/bg-call.png"
+			form_prefix="form__"
+			form_id="fscalc"
+			form_mod="is--calc" 
+			form_color="is--white"
+			form_heading="Есть вопросы?"
+			form_heading_small="Свяжитесь с нашим специалистом - 8 (495) 991-04-30"
+			form_heading_mod="is--form-block  is--sm"
+			form_btn_name="Отправить"
+			form_btn_mod="is--sm"
+		]]
+		[[azbntple 
+			tpl="/src/block/common/footer/footer.html"
+			footer_prefix="footer__" 
+		]]
+		[[azbntple tpl="/src/block/common/modals/include.html" ]]
+		[[azbntple tpl="/src/block/common/script/script.html" ]]
+	</body>
+</html>

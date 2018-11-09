@@ -1,0 +1,24 @@
+<main class="{{content_prefix}}panel  {{content_mod}}">
+	<div class="{{content_prefix}}container container  is--dafault-page  {{content_mod}}  is--full">
+		[[azbntple 
+			tpl="/src/block/common/page-header/panel.html"
+			block_prefix="page-header__" 
+			block_mod="{{block_heading_mod}}"
+			block_heading_level="{{block_heading_level}}"
+			block_heading="{{block_heading}}"
+		]]
+		<div class="{{content_prefix}}elem  {{content_mod}}  text__block  is--center">
+			<p>Запрашиваемая Вами страница не найдена или не существует</p>	
+			<p>&nbsp;</p>
+			<p>	
+			[[azbntple 
+				tpl="/src/block/common/button/link.html"
+				button_prefix="btn__" 
+				button_mod="  "
+				button_link="{{page.index}}"
+				button_name="Ha главную"
+			]] 
+			</p>
+		</div>
+	</div>
+</main>

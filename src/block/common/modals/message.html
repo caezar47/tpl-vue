@@ -1,0 +1,20 @@
+<div class="{{modals_prefix}}block modals  fade  {{modals_mod}}" id="{{modals_id}}" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="{{modals_prefix}}dialog  {{modals_mod}}">
+		<div class="{{modals_prefix}}body  {{modals_mod}}" >
+			<button type="button" class="{{modals_prefix}}btn-close  modal-close" data-dismiss="modal" aria-hidden="true">
+				[[azbntple tpl="/src/block/common/svg-sprite/.html" icon-name="modal-close"]]
+			</button>
+			<div class="{{modals_prefix}}content  {{modals_mod}}">
+				[[azbntple 
+					tpl="/src/block/common/page-header/panel-group.html"
+					block_prefix="page-header__" 
+					block_mod="{{block_heading_mod}}"
+					block_heading_level="{{block_heading_level}}"
+					block_heading="{{block_heading}}"
+					block_heading_small_level="{{block_heading_small_level}}"
+					block_heading_small="{{block_heading_small}}"
+				]]	
+			</div> 
+		</div>
+	</div>
+</div>

@@ -1,0 +1,24 @@
+<div class="{{block_prefix}}panel  {{block_mod}}">				
+	[[azbntple 
+		tpl="/src/block/common/breadcrumb/level1.html" 
+		bread_prefix="breadcrumb__"
+		bread_mod="{{block_bread_mod}}"
+		level_1="{{block_heading}}"
+	]]		
+	[[azbntple 
+		tpl="/src/block/common/page-header/heading.html" 
+		header_prefix="page-header__" 
+		header_mod="{{block_mod}}"
+		header_level="{{block_heading_level}}"
+		header="{{block_heading}}"
+	]]
+	<div class="{{block_prefix}}btn  {{block_mod}}">	
+		[[azbntple 
+			tpl="/src/block/common/button/link.html"
+			button_prefix="btn__" 
+			button_mod="{{header_btn_mod}}"
+			button_link="{{header_btn_link}}"
+			button_name="{{header_btn_name}}"
+		]]
+	</div>
+</div>

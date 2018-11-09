@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru-RU"> 
+	<head>
+		[[azbntple 
+			tpl="/src/block/common/head/.html" 
+			title=" "
+			description=" "
+		]] 		
+	</head>
+	<body> 
+		[[azbntple 
+			tpl="/src/block/common/navbar/navbar.html"
+			navbar_prefix="navbar__"
+			navbar_mod="is--scroll"
+		]] 
+		[[azbntple  
+			tpl="/src/block/page/reviews.html"
+			content_prefix="content-block__"       
+			content_mod="  "
+			block_heading_mod="is--h1  is--ff2  is--center-screen"
+			block_heading_level="h1"
+			block_heading="Отзывы"
+			block_bread_mod="is--center"  
+		]]	
+		[[azbntple 
+			tpl="/src/block/common/footer/footer.html"
+			footer_prefix="footer__" 
+		]]
+		[[azbntple tpl="/src/block/common/modals/include.html" ]]
+		[[azbntple tpl="/src/block/common/script/script.html" ]]
+	</body>
+</html>

@@ -1,0 +1,34 @@
+<main class="{{content_prefix}}panel  {{content_mod}}">
+	<div class="{{content_prefix}}container container  is--full">
+		[[azbntple 
+			tpl="/src/block/common/page-header/panel.html"
+			block_prefix="page-header__" 
+			block_mod="{{block_heading_mod}}"
+			block_heading_level="{{block_heading_level}}"
+			block_heading="{{block_heading}}"
+			block_bread_mod="{{block_bread_mod}}"
+		]]	
+		<div class="{{content_prefix}}elem  {{content_mod}}">			
+			<div class="{{content_prefix}}row row  is--gutter  is--aic  {{content_mod}}">
+				<div class="{{content_prefix}}cols cols  {{content_mod}}  is--grid-2">
+					[[azbntple 
+						tpl="/src/block/common/continfo/panel.html" 
+						block_prefix="continfo__" 
+						block_mod="is--contacts" 
+					]]
+				</div>
+				<div class="{{content_prefix}}cols cols  {{content_mod}}  is--grid-2">
+					[[azbntple 
+						tpl="/src/block/common/map/panel.html" 
+						block_prefix="map__" 
+						block_mod="is--contacts" 
+						block_zoom="{{contacts.map_zoom}}"
+						block_center_coord="{{contacts.map_center_coord}}"
+						block_point_coord="{{contacts.map_point_coord}}"
+						block_point_heading="{{contacts.map_point_heading}}"
+					]]					
+				</div>
+			</div>
+		</div>		
+	</div>
+</main>

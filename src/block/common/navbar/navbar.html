@@ -1,0 +1,113 @@
+<nav class="{{navbar_prefix}}block  {{navbar_mod}}">
+	<div class="{{navbar_prefix}}inner">
+		<div class="{{navbar_prefix}}header">
+			<div class="{{navbar_prefix}}container container  is--header">
+				<div class="{{navbar_prefix}}header-row row ">
+					<div class="{{navbar_prefix}}header-cols cols  is--hamburger">
+						<div class="{{navbar_prefix}}hamburger">
+							<button class="{{navbar_prefix}}hamburger-card" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false" data-toggle-nav=".navbar-site" data-body="html" data-collapse-nav=".navbar__collapse">
+								<span class="{{navbar_prefix}}hamburger-card-inner">
+									<span class="{{navbar_prefix}}hamburger-card-line  is--left"></span>
+									<span class="{{navbar_prefix}}hamburger-card-line  is--center"></span>
+									<span class="{{navbar_prefix}}hamburger-card-line  is--right"></span>
+								</span>
+							</button>
+						</div>
+					</div>
+					<div class="{{navbar_prefix}}header-cols cols  is--logotip">
+						<a class="{{navbar_prefix}}logotip" href="{{page.index}}">
+							[[azbntple tpl="/src/block/common/svg-sprite/.html" icon-name="logotip" ]]
+						</a>
+					</div>
+					<div class="{{navbar_prefix}}header-cols cols  is--tel">
+						[[azbntple 
+							tpl="/src/block/common/continfo/panel-navbar-header.html" 
+							block_prefix="continfo__" 
+							block_mod="is--navbar-header" 
+						]]
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="{{navbar_prefix}}collapse" >
+			<div class="{{navbar_prefix}}container  container  is--collapse">
+				<div class="{{navbar_prefix}}collapse-inner">	
+					<div class="row {{navbar_prefix}}collapse-row">
+						<div class="{{navbar_prefix}}collapse-cols cols  is--left">
+							<a class="{{navbar_prefix}}logotip" href="{{page.index}}">
+								[[azbntple tpl="/src/block/common/svg-sprite/.html" icon-name="logotip" ]]
+							</a> 
+						</div>
+						<div class="{{navbar_prefix}}collapse-cols cols  is--center">
+							<ul class="{{navbar_prefix}}nav">
+								[[azbntple 
+									tpl="/src/block/common/navbar/item.html" 
+									navbar_prefix="navbar__" 
+									navbar_name="Главная" 
+									navbar_link="{{page.index}}"
+									navbar_mod="is--index"
+								]]	
+								[[azbntple 
+									tpl="/src/block/common/navbar/item-drop.html" 
+									navbar_prefix="navbar__" 
+									navbar_name="Dropdown" 
+									navbar_link="{{page.services}}"
+									navbar_mod="  "
+								]]	
+								[[azbntple 
+									tpl="/src/block/common/navbar/item-drop-full.html" 
+									navbar_prefix="navbar__" 
+									navbar_name="Dropdown full" 
+									navbar_link="{{page.price}}"
+									navbar_mod="is--full"
+								]]	
+								[[azbntple 
+									tpl="/src/block/common/navbar/item.html" 
+									navbar_prefix="navbar__" 
+									navbar_name="О нас" 
+									navbar_link="{{page.about}}"
+									navbar_mod="  "
+								]]	
+								[[azbntple 
+									tpl="/src/block/common/navbar/item.html" 
+									navbar_prefix="navbar__" 
+									navbar_name="Наши работы" 
+									navbar_link="{{page.portfolio}}"
+									navbar_mod="  "
+								]]	
+								[[azbntple 
+									tpl="/src/block/common/navbar/item.html" 
+									navbar_prefix="navbar__" 
+									navbar_name="Отзывы" 
+									navbar_link="{{page.reviews}}"
+									navbar_mod="  "
+								]]	
+								[[azbntple 
+									tpl="/src/block/common/navbar/item.html" 
+									navbar_prefix="navbar__" 
+									navbar_name="Новости" 
+									navbar_link="{{page.articles}}"
+									navbar_mod="  "
+								]]	
+								[[azbntple 
+									tpl="/src/block/common/navbar/item.html" 
+									navbar_prefix="navbar__" 
+									navbar_name="Контакты" 
+									navbar_link="{{page.contacts}}"
+									navbar_mod="  "
+								]]	
+							</ul>							
+						</div>
+						<div class="{{navbar_prefix}}collapse-cols cols  is--right">		
+							[[azbntple 
+								tpl="/src/block/common/continfo/panel-navbar.html" 
+								block_prefix="continfo__" 
+								block_mod="is--navbar" 
+							]]
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</nav>

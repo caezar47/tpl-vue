@@ -1,0 +1,70 @@
+<main class="{{content_prefix}}panel  {{content_mod}}">
+	<div class="{{content_prefix}}container container  is--default-page  is--full">
+		[[azbntple 
+			tpl="/src/block/common/page-header/panel.html"
+			block_prefix="page-header__" 
+			block_mod="{{block_heading_mod}}"
+			block_heading_level="{{block_heading_level}}"
+			block_heading="{{block_heading}}"
+			block_bread_mod="{{block_bread_mod}}"
+		]]	
+		<div class="{{content_prefix}}elem  {{content_mod}}">
+			<div class="{{content_prefix}}btn  is--center  is--pt0  {{content_mod}}">
+				[[azbntple 
+					tpl="/src/block/common/button/link.html"
+					button_prefix="btn__" 
+					button_mod="scrollto"
+					button_link="#form-reviews"
+					button_name="Оставить отзыв"
+				]]
+			</div>		
+		</div>		
+		<div class="{{content_prefix}}elem  {{content_mod}}">		
+			<div class="{{content_prefix}}row row  is--gutter  is--gap-lg  is--wrap  {{content_mod}}">
+				<div class="{{content_prefix}}cols cols  {{content_mod}}  is--elem-1">
+					[[azbntple 
+						tpl="/src/block/common/card/card-reviews.html"
+						block_prefix="card-item__" 
+						block_mod="is--reviews"
+						block_preview="http://via.placeholder.com/500x265"
+						block_heading="Кирилл Афанасьев"
+						block_date="20 сентября 2018г"
+						block_date_iso="2018-03-27"
+						block_note="«Не так давно получили квартиру и обратились в ОкнаStory с тем, чтобы они выполнили установку пвх окон в нашем новом доме. Инженер, который делал замеры, дал немало дельных советов по выбору материалов и фурнитуры. Мы решили прислушаться, и не ошиблись. Довольно быстро заказ был исполнен и за два дня нам застеклили всю квартиру, дав на прощание советы по грамотной эксплуатации окон. В целом мы довольны и сроками и ценой, тем более что получили 10% скидку, что в нашем положении вылилось в приличную сумму. Спасибо за профессиональную работу и неравнодушное отношение»."
+					]]
+				</div>
+				<div class="{{content_prefix}}cols cols  {{content_mod}}  is--elem-1">
+					[[azbntple 
+						tpl="/src/block/common/card/card-reviews.html"
+						block_prefix="card-item__" 
+						block_mod="is--reviews"
+						block_preview="http://via.placeholder.com/500x265"
+						block_heading="Кирилл Афанасьев"
+						block_date="20 сентября 2018г"
+						block_date_iso="2018-03-27"
+						block_note="«Не так давно получили квартиру и обратились в ОкнаStory с тем, чтобы они выполнили установку пвх окон в нашем новом доме. Инженер, который делал замеры, дал немало дельных советов по выбору материалов и фурнитуры. Мы решили прислушаться, и не ошиблись. Довольно быстро заказ был исполнен и за два дня нам застеклили всю квартиру, дав на прощание советы по грамотной эксплуатации окон. В целом мы довольны и сроками и ценой, тем более что получили 10% скидку, что в нашем положении вылилось в приличную сумму. Спасибо за профессиональную работу и неравнодушное отношение»."
+					]]
+				</div>
+			</div>
+		</div>	
+		<div class="{{content_prefix}}elem  {{content_mod}}" id="form-reviews">
+			[[azbntple 
+				tpl="/src/block/common/form/form-reviews.html" 
+
+				block_prefix="form__"
+				block_id="f_reviews"
+				block_mod="is--reviews" 
+				block_color="  "
+
+				block_heading_mod="is--h4"
+				block_heading_level="h4"
+				block_heading="Оставить отзыв"
+				block_heading_small_level="div"
+				block_heading_small="Свяжитесь с нами"
+
+				block_btn_name="Отправить"
+				block_btn_mod="  "
+			]]
+		</div>
+	</div>
+</main>

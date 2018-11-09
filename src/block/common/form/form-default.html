@@ -1,0 +1,88 @@
+<div class="{{block_prefix}}block  {{block_mod}}"  >
+	[[azbntple 
+		tpl="/src/block/common/page-header/panel-group.html"
+		block_prefix="page-header__" 
+		block_mod="{{block_heading_mod}}"
+		block_heading_level="{{block_heading_level}}"
+		block_heading="{{block_heading}}"
+		block_heading_small_level="{{block_heading_small_level}}"
+		block_heading_small="{{block_heading_small}}"
+	]]
+	<form action="#" class="{{block_prefix}}panel  {{block_mod}}"  >
+		<input type="hidden" name="key" value="londonisthecapitalofgreatbritain">
+		<input type="hidden" name="f[Форма: {{block_heading}}]">
+		<div class="{{block_prefix}}row row  {{block_mod}}">
+			<div class="{{block_prefix}}cols cols  is--name  {{block_mod}}">
+				[[azbntple 
+					tpl="/src/block/common/form/elem-input-custom.html"
+					form_id="{{block_id}}"
+					block_id="name"
+					block_prefix="{{block_prefix}}"
+					block_mod="{{block_mod}}"
+					block_mod_elem="is--name"
+					block_color="{{block_color}}"
+					block_type="text"
+					block_attr="  "
+					block_required="required"
+					block_required_custom="onlyLetterSp"
+					block_label="Имя"
+					block_placeholder="Имя"
+				]]
+			</div>
+			<div class="{{block_prefix}}cols cols  is--tel  {{block_mod}}">
+				[[azbntple 
+					tpl="/src/block/common/form/elem-input-custom.html"
+					form_id="{{block_id}}"
+					block_id="tel"
+					block_prefix="{{block_prefix}}"
+					block_mod="{{block_mod}}"
+					block_mod_elem="is--tel"
+					block_color="{{block_color}}"
+					block_type="tel"
+					block_attr="  "
+					block_required="required"
+					block_required_custom="phone"
+					block_label="Номер телефона"
+					block_placeholder="Номер телефона"
+				]]
+			</div>
+			<div class="{{block_prefix}}cols cols  is--email  {{block_mod}}">
+				[[azbntple 
+					tpl="/src/block/common/form/elem-input-custom.html"
+					form_id="{{block_id}}"
+					block_id="email"
+					block_prefix="{{block_prefix}}"
+					block_mod="{{block_mod}}"
+					block_mod_elem="is--email"
+					block_color="{{block_color}}"
+					block_type="email"
+					block_attr="  "
+					block_required="required"
+					block_required_custom="email"
+					block_label="E-mail"
+					block_placeholder="E-mail"
+					block_icon="form-email"
+				]]
+			</div>
+			<div class="{{block_prefix}}cols cols  is--btn  {{block_mod}}">
+				[[azbntple 
+					tpl="/src/block/common/button/btn.html"
+					button_prefix="btn__" 
+					button_mod="{{block_btn_mod}}"
+					button_type="submit"
+					button_name="{{block_btn_name}}"
+				]]				
+			</div>
+			<div class="{{block_prefix}}cols cols  is--agreement  {{block_mod}}">
+				[[azbntple 
+					tpl="/src/block/common/form/elem-agreement.html"
+					block_prefix="{{block_prefix}}"
+					block_mod="{{block_mod}}"
+					block_mod_elem="  "
+					block_color="{{block_color}}"
+					block_text="Нажимая на кнопку «{{block_btn_name}}», Вы соглашаетесь с правилами обработки <a href='{{page.agreement}}' target='_blank'>персональных данных</a>"
+				]]		
+			</div>
+		</div>	
+	</form> 
+</div>

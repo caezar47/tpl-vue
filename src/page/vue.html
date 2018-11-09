@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru-RU"> 
+	<head>
+		[[azbntple 
+			tpl="/src/block/common/head/.html" 
+			title=" "
+			description=" "
+		]] 		
+	</head>
+	<body>
+		[[azbntple 
+			tpl="/src/block/common/navbar/navbar.html"
+			navbar_prefix="navbar__"
+			navbar_mod="is--scroll  is--index"
+		]] 
+		<main id="vueApp" v-cloak >
+			<default-component></default-component>
+		</main>
+		[[azbntple 
+			tpl="/src/_/concat.vue.html" 
+			content_prefix="content-block__"
+			content_mod="  "
+		]]	
+		[[azbntple 
+			tpl="/src/block/common/footer/footer.html"
+			footer_prefix="footer__" 
+		]]
+		[[azbntple tpl="/src/block/common/modals/include.html" ]]
+		[[azbntple tpl="/src/block/common/script/script.html" ]]
+		[[azbntple tpl="/src/block/common/script/script-vue.html" ]]
+	</body>
+</html>

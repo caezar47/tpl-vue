@@ -1,0 +1,30 @@
+<article class="{{block_prefix}}card  {{block_mod}}">
+	<div class="{{block_prefix}}row row  is--wrap  {{block_mod}}">
+		<div class="{{block_prefix}}cols cols  {{block_mod}}  is--preview">
+			<a href="{{block_link}}" class="{{block_prefix}}preview  {{block_mod}}">
+				<img src="{{block_preview}}" alt="{{block_heading}}">
+				<div class="{{block_prefix}}bg  {{block_mod}}">
+					<div class="{{block_prefix}}view  {{block_mod}}">
+						[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="view" ]]			
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="{{block_prefix}}cols cols  {{block_mod}}  is--desc">
+			<div class="{{block_prefix}}desc  {{block_mod}}">
+				<time class="{{block_prefix}}date  {{block_mod}}" datetime="{{block_date_iso}}">{{block_date}}</time>	
+				<h4 class="{{block_prefix}}heading  {{block_mod}}"><a href="{{block_link}}">{{block_heading}}</a></h4>
+				<div class="{{block_prefix}}note  {{block_mod}}">{{block_note}}</div>	
+				<div class="{{block_prefix}}btn  {{block_mod}}">
+					[[azbntple 
+						tpl="/src/block/site/default/button/link.html"
+						button_prefix="btn-link__" 
+						button_mod="  "
+						button_link="{{block_link}}"
+						button_name="Подробнее" 
+					]]
+				</div>
+			</div>
+		</div>
+	</div>
+</article>

@@ -1,0 +1,81 @@
+<!-- ** 
+	префиксы:
+		= btn__  				- для кнопок
+		= btn-link__			- для ссылок
+	модификаторы:
+		= по цвету
+			== без модификатора	- основной 
+			== is--invers 		- вспомогательный 
+			== is--white 		- белая 
+		= по размеру
+			== is--lg			- больной
+			== is--sm			- средний
+			== is--xs 			- маленький
+		= по типу контейнера
+			== is--block 		- блоковая
+			== is--form-inline 	- блоковая для горизонтальной формы 
+		= разное 
+			== is--hidden		- прячет кнопку / ссылку
+
+** -->
+<!-- Кнопка-ссылка -->
+<h4 class="{{block_prefix}}heading">{{block_heading}}</h4>
+<div style="margin-bottom: 20px;">		
+	[[azbntple 
+		tpl="/src/block/common/button/link.html"
+		button_prefix="btn__" 
+		button_mod="  "
+		button_link="{{page.index}}"
+		button_name="Предварительный рассчет"
+	]]
+</div>
+<div style="margin-bottom: 20px;">	 	
+	[[azbntple 
+		tpl="/src/block/common/button/btn-modal.html"
+		button_prefix="btn__" 
+		button_mod="is--invers"
+		button_target="modal-message"
+		button_name="Модальное окно" 
+	]]	
+</div>
+<div style="margin-bottom: 25px;">		
+	[[azbntple 
+		tpl="/src/block/common/button/link.html"
+		button_prefix="btn__" 
+		button_mod="is--white"
+		button_link="{{page.index}}"
+		button_name="Предварительный рассчет"
+	]]
+</div>
+<div style="margin-bottom: 20px;">	
+	[[azbntple 
+		tpl="/src/block/common/button/link.html"
+		button_prefix="btn-link__" 
+		button_mod="  "
+		button_link="##"
+		button_name="Подробнее" 
+	]]
+</div>
+
+<div style="margin-bottom: 20px;">	
+	[[azbntple 
+		tpl="8/src/block/common/button/link-icon-name.html"
+		button_prefix="btn-icon__" 
+		button_mod="  "
+		button_attr="  " 
+		button_link="##"
+		button_name="Иностранный язык" 
+		button_icon="docs-pdf"
+	]]
+</div>
+<div>
+	[[azbntple 
+		tpl="8/src/block/common/button/link-icon-name.html"
+		button_prefix="btn-icon__" 
+		button_mod="is--download"
+		button_attr="  " 
+		button_link="##"
+		button_name="Реквизиты ФГБОУ ВО Орловский ГАУ" 
+		button_icon="icon-download"
+	]]	
+</div>

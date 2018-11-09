@@ -1,0 +1,79 @@
+<main class="{{content_prefix}}panel  {{content_mod}}">
+	<div class="{{content_prefix}}container container  is--default-page  is--full">
+		[[azbntple 
+			tpl="/src/block/common/page-header/panel.html"
+			block_prefix="page-header__" 
+			block_mod="{{block_heading_mod}}"
+			block_heading_level="{{block_heading_level}}"
+			block_heading="{{block_heading}}"
+			block_bread_mod="{{block_bread_mod}}"
+		]]			
+		<div class="{{content_prefix}}elem  {{content_mod}}">		
+			<div class="{{content_prefix}}text-block  text__block  {{content_mod}}">
+				<p>Стоимость услуг по&nbsp;изготовлению, установке, ремонту и&nbsp;регламентному техническому обслуживанию окон складывается из&nbsp;нескольких составляющих, в&nbsp;том числе, труда мастера и&nbsp;цен на&nbsp;запасные детали и&nbsp;используемые средства. Кроме того, окончательная цена может учитывать уровень сложности произведенных работ.</p>
+				<p>Стоимость того или иного вида работ можно подсчитать, глядя в&nbsp;приведенные ниже таблицы. Для каждого вида профилей&nbsp;— деревянных, металлических, пластиковых и&nbsp;металлопластиковых&nbsp;— установлены индивидуальные расценки, учитывающие сложности и&nbsp;особенности работ с&nbsp;материалами.</p>
+				<p>В&nbsp;заказ включена стоимость консультирования специалистами ОкнаStory на&nbsp;объекте, если заказчик подписывает договор на&nbsp;осуществление работ. В&nbsp;противном случае консультация оплачивается.</p>
+			</div>
+			<div class="{{content_prefix}}btn  {{content_mod}}">
+				[[azbntple 
+					tpl="/src/block/common/button/button-modal.html"
+					button_prefix="btn__" 
+					button_mod="is--lg"
+					button_target="modal-calc"
+					button_name="Предварительный рассчет" 
+				]]
+			</div>
+		</div>	
+		<div class="{{content_prefix}}elem  {{content_mod}}">
+			[[azbntple 
+				tpl="/src/block/common/tabs/panel.html"
+				block_prefix="tabs__" 
+				block_mod="  "
+			]]
+		</div>	
+		<div class="{{content_prefix}}elem  {{content_mod}}">
+			<h4 class="{{content_prefix}}heading  {{content_mod}}">Акции</h4>
+			<div class="{{content_prefix}}row row  is--gutter  is--wrap  {{content_mod}}">
+				<div class="{{content_prefix}}cols cols  {{content_mod}}  is--elem-3">
+					[[azbntple 
+						tpl="/src/block/common/card/card-news.html"
+						block_prefix="card-item__" 
+						block_mod="is--news"
+						block_link="{{page.action_card}}"
+						block_preview="http://via.placeholder.com/500x265"
+						block_heading="Ручки ПВХ HOPPE всего от 500р."
+						block_date="27.03.2018"
+						block_date_iso="2018-03-27"
+						block_note="Ручки ПВХ HOPPE всего от 500р."
+					]]
+				</div>
+				<div class="{{content_prefix}}cols cols  {{content_mod}}  is--elem-3">
+					[[azbntple 
+						tpl="/src/block/common/card/card-news.html"
+						block_prefix="card-item__" 
+						block_mod="is--news"
+						block_link="{{page.action_card}}"
+						block_preview="http://via.placeholder.com/500x265"
+						block_heading="Скидка 10% для новоселов"
+						block_date="27.03.2018"
+						block_date_iso="2018-03-27"
+						block_note="Компания ОкнаStory в заботе о своих клиентах приняла решение о введении 10% скидки для тех, кто приобрёл новое жильё"
+					]]
+				</div>
+				<div class="{{content_prefix}}cols cols  {{content_mod}}  is--elem-3">
+					[[azbntple 
+						tpl="/src/block/common/card/card-news.html"
+						block_prefix="card-item__" 
+						block_mod="is--news"
+						block_link="{{page.action_card}}"
+						block_preview="http://via.placeholder.com/500x265"
+						block_heading="Маскитная сетка в подарок"
+						block_date="27.03.2018"
+						block_date_iso="2018-03-27"
+						block_note="Оформи заказ на сумму более 5 000 руб. И получи москитную сетку в подарок"
+					]]
+				</div>
+			</div>
+		</div>
+	</div>
+</main>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru-RU"> 
+	<head>
+		[[azbntple 
+			tpl="/src/block/common/head/.html" 
+			title=" "
+			description=" "
+		]] 		
+	</head>
+	<body class="is--index-page"> 
+		[[azbntple 
+			tpl="/src/block/common/navbar/navbar.html"
+			navbar_prefix="navbar__"
+			navbar_mod="is--scroll  is--index"
+		]] 
+		[[azbntple 
+			tpl="/src/block/common/header/panel.html"
+			block_prefix="header-block__"
+			block_heading="Heading"
+			block_heading_small="Heading small"
+			block_btn="Button"
+			block_bg="{{url-path-img}}/temp/bg-index-header.jpg"
+		]]	
+		[[azbntple  
+			tpl="/src/block/page/index-adv.html"
+			content_prefix="content-block__"
+			content_mod="is--adv-index"
+			content_id="adv-block"
+		]]
+		[[azbntple  
+			tpl="/src/block/page/index-services.html"
+			content_prefix="content-block__"  
+			content_mod="is--services-index"
+			content_id="services-block"
+			content_bg="{{url-path-img}}/temp/bg-index-services.jpg"
+			block_heading_mod="is--index-heading"
+			block_heading_level="h2"
+			block_heading="Наши услуги"
+		]]	
+		[[azbntple  
+			tpl="/src/block/page/index-portfolio.html"
+			content_prefix="content-block__"   
+			content_mod="is--portfolio-index"
+			content_id="portfolio-block"
+			block_heading_mod="is--index-heading"
+			block_heading_level="h2"
+			block_heading="Гарантия по договору, а не на словах"
+		]]		
+		[[azbntple 
+			tpl="/src/block/common/footer/footer.html"
+			footer_prefix="footer__" 
+		]]
+		[[azbntple tpl="/src/block/common/modals/include.html" ]]
+		[[azbntple tpl="/src/block/common/script/script.html" ]]
+	</body>
+</html>
