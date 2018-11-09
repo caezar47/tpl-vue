@@ -1,13 +1,13 @@
 .navbar__{
 	&block{
-		color: @navbar-color-device;
+		color: @navbar_color_device;
 		position: fixed;
 		width: 100%;
 		z-index: 100;
 		top: 0;
 		left: 0;
 		@media @media-point-screen-lg {
-			color: @navbar-color;
+			color: @navbar_color;
 			position: absolute;
 			&.opacity{
 				opacity: 0;
@@ -31,21 +31,21 @@
 	&inner{		
 		padding-top: 10px;
 		padding-bottom: 10px; 
-		background: @navbar-bg-device;
+		background: @navbar_bg_device;
 		@media @media-point-screen-lg {			
-			background-color: @navbar-bg-screen;
+			background-color: @navbar_bg_screen;
 			padding-top: 0;
 			padding-bottom: 0;
 			.navbar-site.opacity &{
-				background: @navbar-bg-screen-hover;
+				background: @navbar_bg_screen_hover;
 				//padding-top: 10px;
 				//padding-bottom: 10px;
 			}
 			.navbar-site.is--index &{
-				background-color: fadeout(@navbar-bg-screen, 100%);
+				background-color: fadeout(@navbar_bg_screen, 100%);
 			}
 			.navbar-site.is--index.opacity &{
-				background: @navbar-bg-screen-hover;
+				background: @navbar_bg_screen_hover;
 			}
 		}
 	}
@@ -68,32 +68,32 @@
 	}
 	&logotip{
 		position: relative;
-		&, &:hover, &:focus{color: @navbar-logo-color;}		
+		&, &:hover, &:focus{color: @navbar_logo_color;}		
 		display: block;
 		width: 100%;
 		transition: none;
-		max-width: @navbar-logo-device-widht;
-		height: @navbar-logo-device-height;
+		max-width: @navbar_logo_device_widht;
+		height: @navbar_logo_device_height;
 		img{width: 100%;}
 		@media @media-point-screen-lg {
-			max-width: @navbar-logo-widht;
-			height: @navbar-logo-height;	
+			max-width: @navbar_logo_widht;
+			height: @navbar_logo_height;	
 		}
 	}
 	//collapse
 	&collapse{
 		@media @media-point-device-lg{
 			position: fixed;
-			top: @navbar-device;
+			top: @navbar_device;
 			left: -270px;
 			width: 270px;
-			height: ~"calc(100vh - @{navbar-device})";
+			height: ~"calc(100vh - @{navbar_device})";
 			opacity: 0;
 		    visibility: hidden;
 		    transition: @trs-site;
-		    background: @navbar-bg-device;		    
+		    background: @navbar_bg_device;		    
 		    .navbar-site.opacity &{
-		    	background: @navbar-bg-device;
+		    	background: @navbar_bg_device;
 		    }
 		    &.is--open{
 		    	visibility: visible;
@@ -106,8 +106,8 @@
 			width: 100%;
 		}
 		@media @media-point-md2{
-			top: @navbar-md;
-	    	//background: @navbar-bg-screen;
+			top: @navbar_md;
+	    	//background: @navbar_bg_screen;
 		}
 		@media @media-point-screen-lg{
 			display: block;
@@ -189,15 +189,15 @@
 		//text-transform: uppercase;
 		margin-left: -(@gutter);
 		margin-right: -(@gutter);
-		font-size: @navbar-fs + 4;
-		line-height: @navbar-lh + 6;
+		font-size: @navbar_fs + 4;
+		line-height: @navbar_lh + 6;
 		@media @media-point-device-lg{
 			flex-wrap: wrap;
 		}
 		@media @media-point-screen-lg {
 			justify-content: center;
-			//font-size: @navbar-fs + 4;
-			line-height: @navbar-lh + 2;
+			//font-size: @navbar_fs + 4;
+			line-height: @navbar_lh + 2;
 			.calcFontSize(16, 20, 1200, 1680);
 			.calcLineHeight(22, 26, 320, 1680);
 			margin-left: -(@gutter_screen);
@@ -236,7 +236,7 @@
     	position: relative;
 		transition: @trs-site;
 		font-weight: 400;
-		color: @navbar-color-device;
+		color: @navbar_color_device;
 	    display: inline-block;
 		@media @media-point-device-lg{
 		    .navbar__nav-item.dropdown &{
@@ -245,7 +245,7 @@
 		@media @media-point-screen-lg{
 			display: block;
 			text-align: center;
-			color: @navbar-color;
+			color: @navbar_color;
 			padding: 5px 0;
 		}
 		&::after{
@@ -256,7 +256,7 @@
 			left: 0;
 			width: 100%;
 			height: 2px;
-			background-color: @navbar-active-bg;
+			background-color: @navbar_active_bg;
 			transform-origin: right;
 			transition: transform @trs-option;
 			transform: scale(0, 1);
@@ -271,9 +271,9 @@
 			//transition: @trs-btn; 
 		}
 		&:hover{
-			color: @navbar-color-hover;
+			color: @navbar_color_hover;
 			@media @media-point-screen-lg{
-				//background-color: @navbar-active-bg;
+				//background-color: @navbar_active_bg;
 			}
 			&::after{
 				transform-origin: left;
@@ -290,7 +290,7 @@
 		.navbar__nav-item.open &,
 		.navbar__nav-item.is--active &{			
 			cursor: default;
-			color: @navbar-active-color;
+			color: @navbar_active_color;
 			&::after{
 				transform: scale(1, 1);
 			}	
@@ -312,7 +312,7 @@
 		.navbar__nav-item.open &{
 			transform: translateY(-50%) rotate(180deg);
 			@media @media-point-screen-lg {
-				color: @navbar-active-color;
+				color: @navbar_active_color;
 			}
 		}
 	}
@@ -336,7 +336,7 @@
 			top: 100%;
 		    margin: 0;
 			min-width: 180px;
-			background-color: @navbar-collapse-bg;	
+			background-color: @navbar_collapse_bg;	
 			display: block;
 			transform-origin: 0 0;
     		transform: translateY(-150%);
@@ -400,15 +400,15 @@
 		display: inline-block;
 		transition: @trs-site;
     	position: relative;
-		color: @navbar-color;
+		color: @navbar_color;
     	z-index: 1;
 		padding: 0 0 0 20px; 
-		font-size: @navbar-fs + 0;
-		line-height: @navbar-lh - 0;
+		font-size: @navbar_fs + 0;
+		line-height: @navbar_lh - 0;
 		@media @media-point-screen-lg {
-			//font-size: @navbar-fs + 2;
-			//line-height: @navbar-lh - 2;
-			color: @navbar-collapse-color;
+			//font-size: @navbar_fs + 2;
+			//line-height: @navbar_lh - 2;
+			color: @navbar_collapse_color;
 			.calcFontSize(16, 18, 1200, 1680);
 			.calcLineHeight(20, 22, 320, 1680);
 		}
@@ -429,7 +429,7 @@
 		}
 		.navbar__nav-dropdown-item.is--active &,
 		&:hover{
-			color: @navbar-collapse-color-hover;
+			color: @navbar_collapse_color_hover;
 		}
 		.navbar__nav-dropdown-item.is--active &{
 			cursor: default;
@@ -453,7 +453,7 @@
 		.navbar__nav-item.open &,
 		.navbar__nav-item.is--active &{	
 			@media @media-point-screen-lg {
-				color: @navbar-active-color;		
+				color: @navbar_active_color;		
 			}
 		}	
 	}
@@ -509,8 +509,8 @@
 		display: block
 	}
 	&hamburger-card-inner{		
-		width: @navbar-humb-width;
-		height: @navbar-humb-width;
+		width: @navbar_humb_width;
+		height: @navbar_humb_width;
 		padding: 10px 5px;
 		display: flex;
   		//flex-direction: column;
@@ -523,12 +523,12 @@
 		width: 100%;
 		height: 3px;
 		transition: @trs-site;
-		background-color: @navbar-humb-bg;
+		background-color: @navbar_humb_bg;
 		border-radius: 3px;
     	position: relative;
 		transition: @trs-site;
 		.navbar__hamburger-card.is--active &{
-			background-color: @navbar-humb-bg-active;
+			background-color: @navbar_humb_bg_active;
 		}				
 		&.is--left{
 			.navbar__hamburger-card.is--active &{				
@@ -608,15 +608,15 @@
 	&block{
 		background-color: @white;
 		@media @media-point-device-lg {
-			background: @navbar-bg-device;	
+			background: @navbar_bg_device;	
 			background: @b-color-a;	
 			position: fixed;
 			left: 0;
 			width: 100%;
-			height: ~"calc(100% - @{navbar-device})";
+			height: ~"calc(100% - @{navbar_device})";
 			z-index: 95;
 			bottom: 0;
-			transform: translateY(~"calc(100% - @{navbar-bottom})");
+			transform: translateY(~"calc(100% - @{navbar_bottom})");
 			transition: @trs-site;
 		    //transition: all 0.55s cubic-bezier(0.5, 0.5, 0, 1);
 			overflow: hidden;
@@ -767,7 +767,7 @@
 	} 
 	&dropdown{
 		position: relative;
-		height: ~"calc(100% - @{navbar-bottom})";
+		height: ~"calc(100% - @{navbar_bottom})";
 		padding-left: 15px;
     	padding-right: 15px;    
     	margin-right: auto;

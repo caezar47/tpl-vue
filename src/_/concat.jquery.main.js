@@ -1,12 +1,12 @@
+$('img').addClass('img-responsive');
 $(".form__control[type='tel']").mask("+7 (999) 999-99-99",{placeholder:"+7 (___) ___-__-__"});
-$(".form__block").validationEngine(
+$(".form__panel").validationEngine(
 	'attach', {
 		promptPosition : "bottomLeft",
 		//scrollOffset: 200,		
-		scroll: false
+		scroll: false 
 	}
 ); 
-$('img').addClass('img-responsive');
 //humb
 var humb = $(".navbar__hamburger-card"),
 	toggle_navbar = humb.data("toggle-nav"),
