@@ -26,6 +26,12 @@
 * `@navbar_humb_width` - размер
 * `@navbar_humb_bg` - Цвет линий
 * `@navbar_humb_bg_active` - Цвет линий в активном режиме
+* --- Логотип
+* `@navbar_logo_color` - цвет
+* `@navbar_logo_widht` - Ширина
+* `@navbar_logo_height` - Высота
+* `@navbar_logo_device_widht` - Ширина на устройствах
+* `@navbar_logo_device_height` - Высота на устройствах
 * --- Высота компонента компонента (для media запроса)
 * `@navbar_device` - устройства
 * `@navbar_xs` - xs устройства
